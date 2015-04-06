@@ -1,0 +1,31 @@
+<div class = "inside">
+<center>
+  <h2 id = "wedding-title">My Wedding List</h2>
+<div class = "grid">
+<table>
+  <thead>
+    <tr>
+      <td><h2>Name</h2></td>
+      <td><h2>Reservation</h2></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @weddings.each do |wedding| %>
+      <tr>
+        <td><p><strong><%= wedding.name %></strong></p></td>
+        <td><p><strong><%= wedding.rsvp %></strong></p></td>
+
+        <td><button class = "buttn--info"><%= link_to 'Edit', edit_wedding_path(wedding), :class => "b" %></button></td>
+        <td><button class = "buttn--error"><%= link_to 'Delete', wedding, method: :delete, data: { confirm: 'Are you sure you want to delete this guest?' }, :class => "b" %></button></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<button class = "buttn--default"><%= link_to '+ Add Guest', new_wedding_path, :class => "b" %></button>
+</center>
+</div>
+</div>

@@ -1,0 +1,47 @@
+.sub-button{
+	width: 40%;
+	background-color: #52bab3;
+	color: white;
+}
+td{
+	width: 20%;
+}
+.cover{
+	background-color: #f7b2aa;
+}
+.cover1{
+	background-color: #93E2D5;
+}
+.body2{
+	background-color: #f7b2aa;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.body3{
+	background-color: #93E2D5;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+#logo{
+	font-family: 'Dancing Script', cursive;
+	color: #fff;
+	font-size: 35pt;
+}
+.color-change{
+	color: #fff;
+}
+.inside{
+	background-color: #fff;
+	height: 100%;
+}
+#wedding-title{
+	font-size: 25pt;
+}
+#ttk{
+	font-family: 'Dancing Script', cursive;
+	font-size: 25pt;
+	color: #52bab3;
+}
+.b{
+	color: #fff;
+}

@@ -1,0 +1,37 @@
+<body class = "body3">
+<div class = "cover1">
+<center><h2 id = "logo">-------- &nbsp;Tying the Knot&nbsp; --------</h2></center>
+<div class = "grid">
+  <div class = "grid_col-6">
+<h2 class = "color-change">Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email, :class => "color-change" %><br />
+    <%= f.email_field :email, autofocus: true, :class => "form__input1" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password, :class => "color-change" %><br />
+    <%= f.password_field :password, autocomplete: "off", :class => "form__input1" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in", :class => "sub-button" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
+<div class = "grid_col-6">
+  <%= image_tag("forever.png", :class => "wedding") %> 
+</div>
+</div>
+</body>
